@@ -16,7 +16,7 @@ export default function Footer() {
           <p className="text-slate-400 max-w-xl mx-auto mb-8 text-lg">
             From drone operations to smart agriculture and technology solutions — Apollo Group delivers excellence across every domain.
           </p>
-          <a href="mailto:info@apollogroup.com" className="btn-gold text-base">
+          <a href="mailto:info@apollogroup.ng" className="btn-gold text-base">
             Start a Conversation <ArrowUpRight size={18} />
           </a>
         </div>
@@ -84,18 +84,22 @@ export default function Footer() {
           <div>
             <h3 className="font-display font-semibold text-white text-sm mb-5 tracking-wide">Contact</h3>
             <div className="space-y-4">
-              <a href="mailto:info@apollogroup.com" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors text-sm group">
+              <a href="mailto:info@apollogroup.ng" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors text-sm group">
                 <div className="w-8 h-8 rounded-lg bg-navy-800 flex items-center justify-center group-hover:bg-electric-600/20 transition-colors">
                   <Mail size={14} />
                 </div>
-                info@apollogroup.com
+                info@apollogroup.ng
               </a>
-              <a href="tel:+2340000000000" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors text-sm group">
+              
+              {/*
+              <a href="tel:+2348060406220" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors text-sm group">
                 <div className="w-8 h-8 rounded-lg bg-navy-800 flex items-center justify-center group-hover:bg-electric-600/20 transition-colors">
                   <Phone size={14} />
                 </div>
-                +234 000 000 0000
+                +234 806 040 6220
               </a>
+              */}
+
             </div>
             <div className="mt-6 p-4 card-glass rounded-xl">
               <div className="text-xs text-slate-500 uppercase tracking-widest mb-1">Headquarters</div>

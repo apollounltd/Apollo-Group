@@ -88,7 +88,7 @@ export default function FarmsPage() {
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }}>
             <Link to="/" className="inline-flex items-center gap-2 text-slate-400 hover:text-white text-sm mb-8 transition-colors">
-              <ArrowLeft size={16} /> Back to Apollo Group
+              <ArrowLeft size={16} /> Apollo Group
             </Link>
           </motion.div>
 

@@ -8,7 +8,7 @@ import PageWrapper from '../components/PageWrapper'
 
 const subsidiaries = [
   {
-    name: 'Apollo Consult',
+    name: 'Apollo Consults',
     tagline: 'Aviation & Drone Advisory',
     description: 'We help drone operators, corporate organizations, and government agencies design, document, and improve drone operations to the highest regulatory and safety standards.',
     path: '/consult',
@@ -17,7 +17,7 @@ const subsidiaries = [
     features: [
       'Drone Compliance Reviews',
       'Safety Management Systems',
-      'ROC Registration Guidance',
+      'ROC Registration Guidance/ Renewal',
       'IOGP Readiness Assessments',
     ],
   },

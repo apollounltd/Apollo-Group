@@ -113,7 +113,7 @@ export default function ConsultPage() {
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }}>
             <Link to="/" className="inline-flex items-center gap-2 text-slate-400 hover:text-white text-sm mb-8 transition-colors">
-              <ArrowLeft size={16} /> Back to Apollo Group
+              <ArrowLeft size={16} /> Apollo Group
             </Link>
           </motion.div>
 
@@ -135,7 +135,7 @@ export default function ConsultPage() {
           >
             Apollo
             <br />
-            <span className="gradient-text">Consult</span>
+            <span className="gradient-text">Consults</span>
           </motion.h1>
 
           <motion.p
@@ -200,7 +200,7 @@ export default function ConsultPage() {
                 <p className="text-slate-300 italic text-sm leading-relaxed">
                   "In aviation, what is not documented is often treated as not done."
                 </p>
-                <p className="text-electric-400 text-xs font-display font-semibold mt-2">— Apollo Consult Principle</p>
+                <p className="text-electric-400 text-xs font-display font-semibold mt-2">— Apollo Consults Principle</p>
               </div>
             </FadeIn>
 
@@ -356,9 +356,11 @@ export default function ConsultPage() {
               <a href="mailto:info@apollogroup.com" className="btn-primary text-base">
                 <Mail size={18} /> Email Us Today
               </a>
+              {/*
               <a href="tel:+2340000000000" className="btn-secondary text-base">
                 <Phone size={18} /> Call / WhatsApp
               </a>
+              */}
             </div>
           </FadeIn>
         </div>
