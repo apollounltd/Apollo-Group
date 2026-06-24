@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-navy-950 text-white font-body;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    @apply bg-electric-600 text-white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-navy-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-electric-600 rounded-full;
+  }
+}
+
+@layer components {
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(30, 111, 232, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(30, 111, 232, 0.06) 1px, transparent 1px);
+    background-size: 60px 60px;
+    animation: gridMove 20s linear infinite;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-electric-400 via-electric-500 to-gold-400 bg-clip-text text-transparent;
+  }
+
+  .gold-gradient-text {
+    @apply bg-gradient-to-r from-gold-300 to-gold-500 bg-clip-text text-transparent;
+  }
+
+  .card-glass {
+    background: rgba(13, 31, 60, 0.6);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(30, 111, 232, 0.15);
+  }
+
+  .card-glass-hover {
+    @apply card-glass transition-all duration-300;
+  }
+
+  .card-glass-hover:hover {
+    background: rgba(13, 31, 60, 0.85);
+    border-color: rgba(30, 111, 232, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(30, 111, 232, 0.15);
+  }
+
+  .btn-primary {
+    @apply bg-electric-600 hover:bg-electric-500 text-white font-display font-semibold px-8 py-4 rounded-lg transition-all duration-300 inline-flex items-center gap-2;
+    box-shadow: 0 4px 24px rgba(30, 111, 232, 0.35);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 8px 32px rgba(30, 111, 232, 0.5);
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    @apply border border-electric-600 text-electric-400 hover:bg-electric-600 hover:text-white font-display font-semibold px-8 py-4 rounded-lg transition-all duration-300 inline-flex items-center gap-2;
+  }
+
+  .btn-gold {
+    @apply bg-gradient-to-r from-gold-500 to-gold-400 hover:from-gold-400 hover:to-gold-300 text-navy-950 font-display font-bold px-8 py-4 rounded-lg transition-all duration-300 inline-flex items-center gap-2;
+    box-shadow: 0 4px 24px rgba(201, 146, 42, 0.35);
+  }
+
+  .btn-gold:hover {
+    box-shadow: 0 8px 32px rgba(201, 146, 42, 0.5);
+    transform: translateY(-2px);
+  }
+
+  .section-label {
+    @apply text-xs font-display font-bold tracking-[0.3em] uppercase text-electric-400;
+  }
+
+  .divider {
+    @apply border-t border-navy-700;
+  }
+
+  .glow-dot {
+    @apply w-2 h-2 rounded-full bg-electric-500;
+    box-shadow: 0 0 8px rgba(30, 111, 232, 0.8), 0 0 20px rgba(30, 111, 232, 0.4);
+  }
+
+  .nav-link {
+    @apply text-slate-400 hover:text-white font-body font-medium transition-colors duration-200 text-sm;
+  }
+
+  .stat-card {
+    @apply card-glass rounded-2xl p-6 text-center;
+  }
+}
+
+@keyframes gridMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 60px 60px; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #C9922A 0%,
+    #E5B96A 30%,
+    #C9922A 60%,
+    #E5B96A 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
