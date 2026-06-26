@@ -132,7 +132,7 @@ export default function HomePage() {
         />
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+        <div id="about" className="relative z-10 max-w-5xl mx-auto px-6 text-center">
 
 
           <motion.h1

@@ -93,7 +93,7 @@ export default function ConsultPage() {
       <Navbar />
 
       {/* ─── HERO ─── */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div className="absolute inset-0 bg-gradient-to-b from-navy-950 via-transparent to-navy-950" />
         <div
@@ -255,7 +255,7 @@ export default function ConsultPage() {
       </section>
 
       {/* ─── FLAGSHIP OFFER ─── */}
-      <section className="py-24 bg-gradient-to-b from-navy-900/60 to-navy-950">
+      <section id="about" className="py-24 bg-gradient-to-b from-navy-900/60 to-navy-950">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <FadeIn className="text-center mb-12">
             <div className="section-label mb-4">Flagship Engagement</div>
@@ -343,7 +343,7 @@ export default function ConsultPage() {
       </section>
 
       {/* ─── CTA ─── */}
-      <section className="py-20 bg-gradient-to-r from-electric-600/10 via-navy-900 to-electric-600/10 border-t border-b border-navy-800">
+      <section id="contact" className="py-20 bg-gradient-to-r from-electric-600/10 via-navy-900 to-electric-600/10 border-t border-b border-navy-800">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <FadeIn>
             <h2 className="font-display font-bold text-3xl md:text-4xl text-white mb-4">
