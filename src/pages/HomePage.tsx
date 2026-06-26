@@ -77,7 +77,6 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-b from-navy-950 via-navy-900 to-navy-950" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <FadeIn className="text-center mb-16">
-            <div className="section-label mb-4">What We Do</div>
             <h2 className="font-display font-bold text-4xl md:text-5xl text-white mb-5">
               Three Companies,<br /><span className="gradient-text">One Vision</span>
             </h2>
