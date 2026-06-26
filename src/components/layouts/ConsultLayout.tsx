@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
-import ConsultNavbar from "../components/navbars/ConsultNavbar";
-import Footer from "../components/Footer";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 export default function ConsultLayout() {
   return (
     <>
-      <ConsultNavbar />
+      <Navbar />
       <Outlet />
       <Footer />
     </>

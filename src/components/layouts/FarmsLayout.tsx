@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
-import FarmsNavbar from "../components/navbars/FarmsNavbar";
-import Footer from "../components/Footer";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 
-export default function ConsultLayout() {
+export default function FarmsLayout() {
   return (
     <>
-      <FarmsNavbar />
+      <Navbar />
       <Outlet />
       <Footer />
     </>
