@@ -66,7 +66,7 @@ export default function FarmsPage() {
       <Navbar />
 
       {/* ─── HERO ─── */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="absolute inset-0 bg-gradient-to-b from-navy-950 via-transparent to-navy-950" />
 
@@ -181,12 +181,12 @@ export default function FarmsPage() {
         </div>
       </section>
 
-      {/* ─── MISSION ─── */}
-      <section className="py-24">
+      {/* ─── ABOUT ─── */}
+      <section id="about" className="py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <FadeIn direction="left">
-              <div className="section-label mb-4" style={{ color: '#4CAF50' }}>Our Mission</div>
+              <div className="section-label mb-4" style={{ color: '#4CAF50' }}>About Us</div>
               <h2 className="font-display font-bold text-4xl text-white mb-6 leading-tight">
                 Transforming Agriculture<br />
                 <span className="bg-gradient-to-r from-green-400 to-emerald-300 bg-clip-text text-transparent">
@@ -279,7 +279,7 @@ export default function FarmsPage() {
       </section>
 
       {/* ─── CTA ─── */}
-      <section className="py-20 border-t border-b border-navy-800"
+      <section id="contact" className="py-20 border-t border-b border-navy-800"
         style={{ background: 'linear-gradient(135deg, rgba(76, 175, 80, 0.05) 0%, rgba(10, 22, 40, 0.95) 50%, rgba(76, 175, 80, 0.05) 100%)' }}
       >
         <div className="max-w-3xl mx-auto px-6 text-center">
