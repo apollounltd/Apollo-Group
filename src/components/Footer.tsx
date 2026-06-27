@@ -1,5 +1,13 @@
 import { Link } from 'react-router-dom'
-import { Mail, Phone, Linkedin, Twitter, ArrowUpRight } from 'lucide-react'
+import {
+  Mail,
+  Phone,
+  Instagram,
+  Youtube,
+  MessageCircle,
+  ArrowUpRight,
+} from 'lucide-react'
+
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -39,14 +47,40 @@ export default function Footer() {
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
               A diversified group of companies delivering aviation advisory, sustainable agriculture, and innovative technology solutions.
             </p>
-            <div className="flex gap-3">
-              <a href="#" className="w-9 h-9 rounded-lg card-glass flex items-center justify-center text-slate-400 hover:text-electric-400 hover:border-electric-600/40 transition-all duration-200">
-                <Linkedin size={16} />
-              </a>
-              <a href="#" className="w-9 h-9 rounded-lg card-glass flex items-center justify-center text-slate-400 hover:text-electric-400 hover:border-electric-600/40 transition-all duration-200">
-                <Twitter size={16} />
-              </a>
-            </div>
+<div className="flex gap-3">
+  {/* Instagram */}
+  <a
+    href="https://www.instagram.com/_apollong?igsh=NHB4eHp1emdlMGE="
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+    className="w-9 h-9 rounded-lg card-glass flex items-center justify-center text-slate-400 hover:text-pink-500 hover:border-pink-500/40 transition-all duration-200"
+  >
+    <Instagram size={16} />
+  </a>
+
+  {/* YouTube */}
+  <a
+    href="https://youtube.com/@apollong9673?si=kIvhuIrAp7HOV0hR"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="YouTube"
+    className="w-9 h-9 rounded-lg card-glass flex items-center justify-center text-slate-400 hover:text-red-500 hover:border-red-500/40 transition-all duration-200"
+  >
+    <Youtube size={16} />
+  </a>
+
+  {/* WhatsApp */}
+  <a
+    href="https://wa.me/2348060406220"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp"
+    className="w-9 h-9 rounded-lg card-glass flex items-center justify-center text-slate-400 hover:text-green-500 hover:border-green-500/40 transition-all duration-200"
+  >
+    <MessageCircle size={16} />
+  </a>
+</div>
           </div>
 
           {/* Subsidiaries */}
@@ -72,7 +106,7 @@ export default function Footer() {
           <div>
             <h3 className="font-display font-semibold text-white text-sm mb-5 tracking-wide">Quick Links</h3>
             <ul className="space-y-3">
-              {['About Apollo Group', 'Our Mission', 'Careers', 'News & Insights', 'Partners'].map((item) => (
+              {['About Apollo Group', 'Our Mission', 'Partners'].map((item) => (
                 <li key={item}>
                   <a href="#" className="text-slate-400 hover:text-white text-sm transition-colors">{item}</a>
                 </li>
@@ -90,15 +124,15 @@ export default function Footer() {
                 </div>
                 info@apollogroup.ng
               </a>
+
               
-              {/*
               <a href="tel:+2348060406220" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors text-sm group">
                 <div className="w-8 h-8 rounded-lg bg-navy-800 flex items-center justify-center group-hover:bg-electric-600/20 transition-colors">
                   <Phone size={14} />
                 </div>
                 +234 806 040 6220
               </a>
-              */}
+              
 
             </div>
             <div className="mt-6 p-4 card-glass rounded-xl">
@@ -114,10 +148,6 @@ export default function Footer() {
       <div className="border-t border-navy-800">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-slate-500 text-sm">© {year} Apollo Group. All rights reserved.</div>
-          <div className="flex gap-6">
-            <a href="#" className="text-slate-500 hover:text-slate-300 text-xs transition-colors">Privacy Policy</a>
-            <a href="#" className="text-slate-500 hover:text-slate-300 text-xs transition-colors">Terms of Use</a>
-          </div>
         </div>
       </div>
     </footer>
